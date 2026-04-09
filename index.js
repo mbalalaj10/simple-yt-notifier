@@ -1,4 +1,4 @@
-// YT-LIVE-NOTIFIER MAIN SCRIPT
+// Simple YT Notifier - A lightweight Node.js app to notify Discord of new YouTube videos and livestreams from a specific channel using YouTube's Pub/SubHubbub system.
 // MADE ON NOVEMBER 7TH, 2025
 // UPDATED ON APRIL 9TH, 2026
 
