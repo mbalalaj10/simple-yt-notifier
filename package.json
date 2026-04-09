@@ -1,0 +1,14 @@
+{
+  "name": "simple-yt-notifier",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "raw-body": "^2.5.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
