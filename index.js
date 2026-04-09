@@ -183,10 +183,10 @@ app.post("/webhook", async (req, res) => {
     let announcementType = "";
 
     if (status === "live") {
-      announcementType = "is now live! Check out their stream:";
+      announcementType = "**is now live!**\nCheck out their stream:";
       console.log(`Match found: Processing as LIVESTREAM.`);
     } else if (status === "none") {
-      announcementType = "has uploaded a new video! Go check it out:";
+      announcementType = "**has uploaded a new video!**\nGo check it out:";
       console.log(`Match found: Processing as UPLOAD.`);
     } else {
       console.log(`Status is ${status} (likely scheduled/upcoming). Video status not met, ignoring for now.`);
@@ -198,7 +198,7 @@ app.post("/webhook", async (req, res) => {
 
     // Send message to Discord
     const ping = DISCORD_ROLE_ID ? `<@&${DISCORD_ROLE_ID}>` : "@everyone";
-    const message = `${ping}\n\n**${dynamicChannelName} ${announcementType}** https://www.youtube.com/watch?v=${videoId}`;
+    const message = `${ping}\n\n**${dynamicChannelName}** ${announcementType} https://www.youtube.com/watch?v=${videoId}`;
     console.log(`Sending Discord notification for ${CHANNEL_ID}:\n\n${message}`);
 
     const discordRes = await fetch(DISCORD_WEBHOOK, {
