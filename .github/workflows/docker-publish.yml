@@ -1,3 +1,6 @@
+# Simple Youtube Notifier - Docker publish workflow for creating the container image and pushing it to GitHub Container Registry (GHCR)
+# Created on April 9th, 2026
+
 name: Build/Publish Docker Image
 
 on:
@@ -32,5 +35,4 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: |
-                    ghcr.io/${{ github.repository }}:latest
+                tags: ghcr.io/${{ github.repository }}:latest
