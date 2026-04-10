@@ -1,0 +1,37 @@
+# Simple YT Notifier - Dependabot configuration for managing dependencies and keeping them up to date
+# Created on April 9th, 2026
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "04:00"
+    open-pull-requests-limit: 5
+    labels:
+      - "security"
+      - "npm"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "04:00"
+    open-pull-requests-limit: 5
+    labels:
+      - "security"
+      - "github-actions"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "04:00"
+    open-pull-requests-limit: 5
+    labels:
+      - "security"
+      - "docker"
