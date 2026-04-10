@@ -4,6 +4,7 @@
 name: Security Scorecard Action
 
 on:
+  workflow_dispatch:
   branch_protection_rule:
     types: [created, edited, deleted]
   schedule:
@@ -29,6 +30,8 @@ jobs:
     permissions:
       security-events: write
       id-token: write
+      contents: read
+      actions: read
     
     steps:
       - name: Checkout Code
