@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "express": "^5.2.1",
-    "node-fetch": "^3.3.2",
-    "raw-body": "^3.0.2"
+    "express": "5.2.1",
+    "node-fetch": "3.3.2",
+    "raw-body": "3.0.2"
   },
   "scripts": {
     "start": "node index.js",
