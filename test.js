@@ -1,7 +1,7 @@
 // Simple YT Notifier - Basic checker to ensure npm app is working correctly with the dependencies
 // Created on April 9th, 2026
 
-const { spawn } = require('child_process');
+import { spawn } from 'child_process';
 
 // Dummy variables to prevent startup crashes
 process.env.DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/123/abc';
@@ -10,7 +10,7 @@ process.env.PORT = '3001';
 
 console.log('Starting basic test of npm application.');
 
-const server = spawn('node', ['index.js'], {env: process.env});
+const server = spawn('node', ['index.js'], { env: process.env });
 
 // condition: Application stays alive for 5 seconds
 const timer = setTimeout(() => {
