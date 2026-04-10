@@ -2,7 +2,7 @@
 # Created on April 9th, 2026
 
 # Load and use official node.js image as the base image for the notifier.
-FROM node:24-alpine
+FROM node:25-alpine
 
 # Setting the app directory
 WORKDIR /usr/src/app
