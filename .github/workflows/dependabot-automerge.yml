@@ -1,0 +1,31 @@
+# Simple YT Notifier - Automatic merging of Dependabot pull requests 
+# for updates to dependencies, with exception of major updates
+# Created on April 9th, 2026
+
+name: Dependabot Auto-Merge
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: "Fetch Dependabot Metadata"
+        id: metadata
+        uses: dependabot/fetch-metadata@v3
+
+      - name: Enable auto-merge for Dependabot non-major PRs
+        # Only merge if it's NOT a major version bump
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-# Simple YT Notifier - Dependabot configuration for managing dependencies and keeping them up to date
+# Simple YT Notifier - Dependabot configuration for checking dependencies and pull requests for updates
 # Created on April 9th, 2026
 
 version: 2
