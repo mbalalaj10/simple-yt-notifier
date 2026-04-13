@@ -232,6 +232,7 @@ app.get("/webhook", (req, res) => {
 
   if (mode && challenge) {
     console.log(`Webhook verification request received: mode=${mode} topic=${topic}`);
+    res.set('Content-Type', 'text/plain');
     res.status(200).send(challenge);
   } else {
     res.sendStatus(400);
