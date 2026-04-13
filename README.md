@@ -99,4 +99,4 @@ The application communicates with the Discord API to post notifications.
 - **Payload Format:** JSON-encoded Discord Webhook object, including the video link and role pings if configured.
 
 # Acknowledgements and References
-insert info
+To be added in the upcoming releases.
