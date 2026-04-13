@@ -11,7 +11,8 @@ on:
     branches:
       - main
 
-
+permissions:
+  contents: read
 
 env:
   REGISTRY: ghcr.io
@@ -20,7 +21,8 @@ env:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository
@@ -38,6 +40,9 @@ jobs:
   build-and-push:
     needs: run-tests
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
 
     steps:
