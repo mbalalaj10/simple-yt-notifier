@@ -54,8 +54,8 @@ services:
 3. Once the file is composed, deploy the container using `docker compose up -d` or with an equivalent command.
 
 ## Repository Information:
-- For contributing to this project and reporting general issues and bugs, see LINK
-- For reporting security vulnerabilities, see LINK
+- For contributing to this project and reporting general issues and bugs, see the [contributing section](CONTRIBUTING.md).
+- For reporting security vulnerabilities, see the [security policy](SECURITY.md).
 
 ## Extra Acknowledgements and References:
 insert info
