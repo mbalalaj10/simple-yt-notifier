@@ -53,3 +53,9 @@ services:
     - **DISCORD_ROLE_ID (Optional):** The Discord Role ID of the role you wish for the webhook to ping you. If not specified, defaults to an `@everyone` Ping.
 3. Once the file is composed, deploy the container using `docker compose up -d` or with an equivalent command.
 
+## Repository Information:
+- For contributing to this project and reporting general issues and bugs, see LINK
+- For reporting security vulnerabilities, see LINK
+
+## Extra Acknowledgements and References:
+insert info
