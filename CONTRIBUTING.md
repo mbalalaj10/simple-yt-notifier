@@ -26,5 +26,13 @@ We follow a standard GitHub Flow for all contributions:
 3. **Open a Pull Request (PR)** with a clear description of the changes.
 4. **Pass Status Checks:** Your PR must pass all automated scans and checks before it can be merged.
 
+## Contribution Requirements & Coding Standards
+To maintain project quality and security, all contributions must meet the following requirements:
+
+1. **Code Quality:** We utilize [ESLint](https://eslint.org/) for JavaScript linting. Please ensure your code follows standard Node.js best practices and contains no linting errors.
+2. **Security Standards:** All Pull Requests must pass the automated [GitHub CodeQL](https://codeql.github.com/) analysis and the general build checker. 
+3. **Least Privilege:** New features must adhere to the principle of least privilege, especially regarding GitHub Action token permissions.
+4. **No Hardcoded Secrets:** Ensure no API keys, webhooks, or secrets are included in your commits. Use environment variables for all sensitive data.
+
 ## Code of Conduct
 By participating in this project, you agree to maintain a respectful and collaborative environment for all contributors.
