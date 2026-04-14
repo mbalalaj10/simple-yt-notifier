@@ -100,4 +100,4 @@ The application communicates with the Discord API to post notifications.
 - **Payload Format:** JSON-encoded Discord Webhook object, including the video link and role pings if configured.
 
 # Acknowledgements and References
-To be added in the upcoming major release.
+Bell Icon for Project: https://www.clipartmax.com/middle/m2i8N4d3i8Z5H7H7_ringing-bell-png/
