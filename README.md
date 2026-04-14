@@ -3,7 +3,7 @@ A simple YouTube to Discord Notifier using Node.js.
 
 [![Docker Image](https://img.shields.io/badge/docker-ghcr.io-blue?logo=docker&logoColor=white)](https://github.com/mbalalaj10/simple-yt-notifier/pkgs/container/simple-yt-notifier)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mbalalaj10/simple-yt-notifier?style=flat-square&color=blue)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/12431/badge)](https://www.bestpractices.dev/projects/12431/badge)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/12431/badge)](https://www.bestpractices.dev/projects/12431)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/mbalalaj10/simple-yt-notifier/badge)](https://scorecard.dev/viewer/?uri=github.com/mbalalaj10/simple-yt-notifier)
 
 ## Table of Contents
@@ -100,4 +100,4 @@ The application communicates with the Discord API to post notifications.
 - **Payload Format:** JSON-encoded Discord Webhook object, including the video link and role pings if configured.
 
 # Acknowledgements and References
-To be added in the upcoming major release.
+Bell Icon for Project: https://www.clipartmax.com/middle/m2i8N4d3i8Z5H7H7_ringing-bell-png/
