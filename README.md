@@ -51,14 +51,7 @@ services:
 ```
 
 1. Create a docker-compose.yml and implement the example above.
-2. Ensure you have the environment variables set as explained here:
-    - **PORT:** The internal port the application listens to. Set to 3000 by default.
-    - **DISCORD_WEBHOOK:** The full URL of the Discord Webhook where the notifications will be sent out.
-    - **CHANNEL_ID:** The YouTube Channel ID of the channel you wish to monitor. Begins with `UC...`
-    - **YT_API_KEY:** Your Google Cloud Console API key with the required YouTube Data API v3 enabled. More information on how to get it: 
-    - **APP_URL:** The publicly accessible URL of this container. For example: https://notifier.yourdomain.com
-    - **HUB_SECRET:** A cryptographically strong random string used to verify that incoming notifications actually come from YouTube. The app currently does not generate one for you automatically, so make sure to generate a strong one to make sure the app does not send you arbitrary webhook messages to your Discord channel.
-    - **DISCORD_ROLE_ID (Optional):** The Discord Role ID of the role you wish for the webhook to ping you. If not specified, defaults to an `@everyone` Ping.
+2. Ensure you have the environment variables set as explained below.
 3. Once the file is composed, deploy the container using `docker compose up -d` or with an equivalent command.
 
 # Repository Information
@@ -74,7 +67,7 @@ services:
 
 - **CHANNEL_ID:** The YouTube Channel ID of the channel you wish to monitor. Begins with `UC...`
 
-- **YT_API_KEY:** Your Google Cloud Console API key with the required YouTube Data API v3 enabled. More information on how to get it: 
+- **YT_API_KEY:** Your Google Cloud Console API key with the required YouTube Data API v3 enabled. 
 
 - **APP_URL:** The publicly accessible URL of this container. For example: https://notifier.yourdomain.com
 
